@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Untuk Dinda ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff5f9e, #ff9a9e);
+    overflow: hidden;
+    color: white;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 22px;
+    text-align: center;
+    background: rgba(255,255,255,0.18);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.kue {
+    font-size: 65px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 15px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ff4f81;
+    background: white;
+}
+
+#kejutan {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hati {
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    animation: naik 7s linear infinite;
+}
+
+@keyframes naik {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hati" style="left:10%;">❤️</div>
+<div class="hati" style="left:30%;animation-delay:2s;">💕</div>
+<div class="hati" style="left:55%;animation-delay:4s;">❤️</div>
+<div class="hati" style="left:80%;animation-delay:1s;">💗</div>
+
+<div class="card">
+
+    <img src="foto-dinda.jpg" class="foto" alt="Dinda">
+
+    <div class="kue">🎂</div>
+
+    <h1>Selamat Ulang Tahun</h1>
+
+    <h2>Dinda ❤️</h2>
+
+    <p>
+        Iyo e tambah tuo rek 😂
+    </p>
+
+    <p>
+        Semoga panjang umur, sehat selalu,
+        semakin bahagia, dan semua impianmu
+        bisa tercapai. 🥰
+    </p>
+
+    <button onclick="bukaKejutan()">
+        🎁 Buka Kejutan
+    </button>
+
+    <div id="kejutan">
+        🎉🥳🎂<br><br>
+        <b>Selamat ulang tahun, Dinda!</b><br><br>
+        Dari Roni ❤️
+    </div>
+
+</div>
+
+<script>
+function bukaKejutan() {
+    document.getElementById("kejutan").style.display = "block";
+}
+</script>
+
+</body>
+</html>
